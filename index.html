@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Free Work</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Free Work"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="css/normalize.css" rel="stylesheet"/>
+        <link href="images/Free%20Work%20Icon 8.png" rel="shorcut icon" type="image/png" />
+        <link href="css/all.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet"/>
+        
+    </head>
+    <body>
+        <div class="nav">
+            <div class="nav-img">
+                <a href="#" title="Free Work Home"><img src="images/fw3.png"/></a>
+            </div>
+            <div class="nav1">
+                <ul>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">Browse</a></li>
+                </ul>
+            </div>    
+            <div class="nav2">   
+                <ul>
+                    <li><a href="#" onclick="document.getElementById('register').style.display='flex';">Sign Up</a></li>
+                    <li><a href="#" onclick="document.getElementById('login').style.display='flex';">Sign In</a></li>
+                </ul>
+            </div>   
+        </div>
+        <div id="register" class="signup">
+            <form class="form-signup">
+                <div class="form-img">
+                    <img src="images/male-female-user.png"/>
+                    
+                </div>
+                <div class="form-container">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <label class="rem">
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <p style="margin: 2% 0%;">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="login" class="signin">
+            <form class="form-signup">
+                <div class="form-img">
+                    <img src="images/male-female-user.png"/>
+                    
+                </div>
+                <div class="form-container">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label class="rem">
+                        <input type="checkbox" name="remember" class="rem"> Remember me
+                    </label>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign In</button>
+                    </div>
+                    <p style="margin: 2% 0%; position: relative; left: 80%;">Forget <a href="#">Password?</a>.</p>
+                </div>
+            </form>
+        </div>
+        <div class="head">
+              <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <img src="images/main4.jpg" style="max-width:100%; height: auto;">
+                    <span id="typed" class="text"></span>
+                  </div>
+
+                <div class="mySlides fade">
+                  <img src="images/hire2.jpg" style="max-width:100%; height: auto;">
+                  <span id="typedd" class="text"></span>
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="images/work1.jpg" style="max-width:100%; height: auto;">
+                  <span id="typeddd" class="text"></span>
+                </div>
+                <div style="text-align:center">
+                  <a><span class="dot"></span></a> 
+                  <a><span class="dot"></span></a>
+                  <a><span class="dot"></span></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

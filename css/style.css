@@ -1,0 +1,202 @@
+/* Start My Framework */
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+a{
+    text-decoration: none;
+    color: #EEC200;
+    font-weight: 700; 
+}
+h1{
+    font-size: 2.5vw;
+}
+h2{
+    font-size: 2.1vw;
+}
+h3{
+    font-size: 1.7vw;
+}
+p{
+    font-size: 1.1vw;
+}
+body{
+    height: 2000px;
+}
+
+/* End My Frame Work */
+
+/* Start Nav */
+
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 5px 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav1{
+    
+}
+.nav img{
+    max-width: 10vw;
+    max-height: 6vw;
+    padding: 5px 10px;
+}
+ul{
+    list-style-type: none;
+    font-size: 1.2vw;
+}
+li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.nav2{
+    position: absolute;
+    top: 20%;
+    right: 7%;
+}
+
+/* End Nav*/
+
+/* Start Header */
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width:100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #EEC200;
+    font-size: 5vw;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+}
+.typed-cursor{
+    color: white;
+}
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* End Header */
+
+
+/* Start Sign-in */
+
+.signup, .signin{
+    max-width: 50%;
+    display: none;
+    justify-content: center;
+    align-items:center;
+    margin: auto 25%;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    top: 6%;
+    font-size: 1.3vw;
+    background-color: white;
+    color:#573B00;
+    border: 1px solid #8A6116;
+    animation: animatescale 1s;
+}
+@keyframes animatescale{
+    from{transform: scale(0)}
+    to {transform: scale(1)}
+}
+.form-img{
+    text-align: center;
+}
+label{
+    width: 100%;
+    margin: 6% 0%;
+    text-align: left;
+}
+.rem{
+    margin-top: 2%;
+}
+input[type=email], input[type=password]{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 1.5% 0%;
+    font-size: 1.1vw;
+    color: #8A6116;
+}
+.form-container{
+    margin: 5px;
+}
+.form-container label{
+    text-align: center;
+}
+button{
+    background-color: #4CAF50;
+    color: white;
+    width: 50%;
+    opacity: .9;
+    border: 0px;
+    margin: 3.5% 0% 0%;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 1;
+}
+.cancelbtn{
+    background-color: #f44336;
+}
+.signupbtn{
+    float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* End Sign-in*/
+
+
+
+
+
+
+
+
+
+
+
+
